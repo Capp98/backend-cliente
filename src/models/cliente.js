@@ -7,7 +7,7 @@ const sequelize = require('../database/database.js');
 // Cria tabela no BD e seus campos
 const Cliente = sequelize.define("cliente", {
     id: {
-        allowNull: true,
+        allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
