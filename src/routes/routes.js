@@ -2,6 +2,7 @@ const express = require('express');
 const ClienteController = require ('../controllers/clienteController.js');
 const router = express.Router();
  
+router.get('/', ClienteController.SelectAll);
 router.post('/cliente', ClienteController.Insert);
 router.get('/cliente', ClienteController.SelectAll);
 router.get('/cliente/:id', ClienteController.SelectDetail);
